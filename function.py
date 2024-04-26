@@ -1,8 +1,15 @@
-import outils
-
+# External
 from os.path import join, dirname
 from dotenv import load_dotenv
 import os
+
+# doenv
+from os.path import join, dirname
+from dotenv import load_dotenv
+load_dotenv(join(dirname(__file__), '.env'))
+
+# Internal
+import outils
 
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)

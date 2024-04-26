@@ -1,9 +1,15 @@
+#  External
+from datetime import datetime
+import multiprocessing
+
+# doenv
+from os.path import join, dirname
+from dotenv import load_dotenv
+load_dotenv(join(dirname(__file__), '.env'))
+
+# Internal
 import outils
 import function
-
-from datetime import datetime
-
-import multiprocessing
 
 if __name__ == "__main__":
     start = datetime.now()
