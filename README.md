@@ -26,8 +26,8 @@ Exécuter `py ./main.py` pour lancer le script.
 Il va vous demander sur quel environnement vous voulez qu'il travaille.
 
 * [ ] prod
-* [ ] dev
-* [X] local (par defaut)
+* [X] dev (par defaut)
+* [] local
 
 Et si vous voulez que le script arrête le poste à la fin.
 

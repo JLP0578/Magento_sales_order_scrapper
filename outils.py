@@ -248,7 +248,7 @@ def worker(env, store, commandes):
 
         # Parcourir chaque élément du tableau
         for commande in commandes:
-            time.sleep(5)
+            time.sleep(1)
             sales_order_id = commande[0]
             type_error = None
 
