@@ -22,17 +22,16 @@ Il est necéssaire d'avoir `Python3`, `pip`, et les extentions requis pour lance
 
 Vérifié, que votre projet fraîchement cloné a les dossier `logs` et `output`, vous devrez aussi copier le `.env_sample`, renommez le en `.env` et renseignez les éléments
 
+Suivant le thème utiliser les selecteur CSS devrons être mis à jours
+
+| Option           | Description                                               | Type   |
+| ------------------ | ----------------------------------------------------------- | -------- |
+| --env            | Environement que le script va utiliser pour faire le scan | string |
+| --stores         | Les`store_id` de vos stores à parcourir (ex: "1,5,7")  | string |
+| -- nb_processing | Le nombre de process qui seront lancé pour chaque stores | int    |
+
 Exécuter `py ./main.py` pour lancer le script.
 Il va vous demander sur quel environnement vous voulez qu'il travaille.
-
-* [ ] prod
-* [X] dev (par defaut)
-* [] local
-
-Et si vous voulez que le script arrête le poste à la fin.
-
-* [ ] oui
-* [X] non (par defaut)
 
 Si le script trouve une erreur, il va générer un fichier dans `output`, il vous restera plus qu'à le réparer 🛠️
 
@@ -62,7 +61,7 @@ Si le script trouve une erreur, il va générer un fichier dans `output`, il vou
 | `LOCAL_DOMAIN`         | **URL** pour accéder au back-office du local            |
 | `LOCAL_USERNAME_LOGIN` | **Utilisateur** pour accéder au back-office du local    |
 | `LOCAL_PASSWORD_LOGIN` | **Mot de passe** pour accéder au back-office du local   |
-| `EXCLUDE_STORE`        | **ID** des store a exclure (ex :`"0, 3, 5"`)            |
+| `EXCLUDE_STORE`        | **ID** des store a exclure (ex :`"0,3,5"`)            |
 
 
 ## Quelles seraient les vulnérabilités de l'outil ? 
