@@ -13,7 +13,10 @@ parser.add_argument(
     help="L'environement à utiliser (ex: prod) [prod, dev, local]",
 )
 parser.add_argument(
-    "--stores", type=str, help="Quels stores sont à scanner (ex:  1, 5, 8)"
+    "--stores",
+    type=str,
+    default="0",
+    help="Quels stores sont à scanner (ex:  1, 5, 8)",
 )
 parser.add_argument(
     "--nb_processing",
